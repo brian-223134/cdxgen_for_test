@@ -1,10 +1,49 @@
 #!/usr/bin/env node
 
+/**
+ * parsePyProjectTomlFile.run.js
+ *
+ * 목적
+ * - cdxgen의 `parsePyProjectTomlFile(pyprojectPath)` 함수를 “단독 실행”하기 위한 러너(실험/디버깅용) 스크립트입니다.
+ * - `pyproject.toml`을 파싱해서 아래 정보를 빠르게 확인합니다.
+ *   - parentComponent (프로젝트 자체 메타데이터: name/version/purl/bom-ref 등)
+ *   - directDepsKeys (프로젝트의 direct dependency 이름 집합)
+ *   - groupDepsKeys (dependency-groups/poetry group 등 그룹 정보)
+ *   - workspacePaths (uv workspace 멤버를 찾기 위한 glob 목록)
+ *
+ * 작동 원리(요약)
+ * 1) CLI 인자 파싱 (`parseArgs`)
+ * 2) `--pyproject` 경로를 CWD 기준 절대경로로 정규화
+ * 3) `parsePyProjectTomlFile(절대경로)` 호출
+ * 4) 옵션에 따라:
+ *    - 요약 출력(기본)
+ *    - direct/group/workspace 상세 출력
+ *    - JSON stdout 출력(`--json`)
+ *    - JSON 파일 저장(`--out`)
+ *
+ * 사용 방법(Windows PowerShell 예시)
+ * - 반드시 패키지 루트(= `cdxgen/cdxgen`, package.json 있는 폴더)에서 실행하는 것을 권장합니다.
+ *
+ *   # 1) 요약 출력
+ *   node .\test\code\parsePyProjectTomlFile.run.js -p .\test\local-data\pyproject\pyproject.toml
+ *
+ *   # 2) 상세 출력
+ *   node .\test\code\parsePyProjectTomlFile.run.js -p .\test\local-data\pyproject\pyproject.toml --show-direct --show-groups --show-workspace-paths
+ *
+ *   # 3) 전체 결과를 JSON 파일로 저장
+ *   node .\test\code\parsePyProjectTomlFile.run.js -p .\test\local-data\pyproject\pyproject.toml --json -o .\test\local-data\pyproject\pyproject.parsed.json
+ */
+
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 
 import { parsePyProjectTomlFile } from "../../lib/helpers/utils.js";
 
+/**
+ * argv를 파싱해서 옵션 객체로 변환합니다.
+ * - 인자 값이 없는 플래그(`--show-direct` 등)는 boolean으로 처리합니다.
+ * - `--pyproject`, `--out`는 다음 토큰을 값으로 읽습니다.
+ */
 function parseArgs(argv) {
   const out = {
     pyproject: undefined,
@@ -41,7 +80,7 @@ function parseArgs(argv) {
 
 function usage() {
   console.log(`Usage:
-  node ./test/parsePyProjectTomlFile.run.js --pyproject <pyproject.toml> [options]
+  node ./test/code/parsePyProjectTomlFile.run.js --pyproject <pyproject.toml> [options]
 
 Options:
   -p, --pyproject            Path to pyproject.toml
@@ -53,8 +92,8 @@ Options:
   -h, --help                 Show help
 
 Examples:
-  node ./test/parsePyProjectTomlFile.run.js -p ./test/local-data/pyproject.toml
-  node ./test/parsePyProjectTomlFile.run.js -p ./test/local-data/pyproject.toml --json -o ./test/local-data/pyproject.parsed.json
+  node ./test/code/parsePyProjectTomlFile.run.js -p ./test/local-data/pyproject/pyproject.toml
+  node ./test/code/parsePyProjectTomlFile.run.js -p ./test/local-data/pyproject/pyproject.toml --json -o ./test/local-data/pyproject/pyproject.parsed.json
 `);
 }
 
@@ -62,6 +101,10 @@ function countKeys(obj) {
   return obj && typeof obj === "object" ? Object.keys(obj).length : 0;
 }
 
+/**
+ * 사람이 보기 쉬운 요약 객체를 만듭니다.
+ * - `--json`이 아니라면 이 요약을 출력하거나 파일로 저장합니다.
+ */
 function buildSummary(ret, pyprojectPath) {
   return {
     pyproject: pyprojectPath,
@@ -88,6 +131,13 @@ function buildSummary(ret, pyprojectPath) {
 }
 
 async function main() {
+  /**
+   * 메인 실행 함수
+   * - 파일 존재 여부 확인 후 파서를 호출합니다.
+   * - `--out`이 있으면 JSON 파일을 생성합니다.
+   *   - `--json`이면 전체 결과를
+   *   - 아니면 요약(summary)을 저장합니다.
+   */
   const args = parseArgs(process.argv.slice(2));
   if (args.help) {
     usage();

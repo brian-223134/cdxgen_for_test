@@ -1,10 +1,46 @@
 #!/usr/bin/env node
 
+/**
+ * parsePyLockData.run.js
+ *
+ * 목적
+ * - cdxgen의 `parsePyLockData(lockData, lockFile, pyProjectFile)` 함수를 “단독 실행”하기 위한 러너(실험/디버깅용) 스크립트입니다.
+ * - Python lock 파일(`poetry.lock`/`pdm.lock`/`uv.lock`/`uv-workspace.lock`)을 읽어서
+ *   `pkgList`, `dependenciesList`, `rootList`, `parentComponent` 등 파싱 결과를 사람이 보기 좋게 출력하거나 JSON으로 저장합니다.
+ *
+ * 작동 원리(요약)
+ * 1) CLI 인자 파싱 (`parseArgs`)
+ * 2) `--lock`/`--pyproject` 경로를 CWD 기준 절대경로로 정규화
+ * 3) lock 파일을 문자열로 읽고 `parsePyLockData(...)` 호출
+ * 4) 옵션에 따라:
+ *    - 요약 출력
+ *    - `pkgList`/`dependenciesList` 출력
+ *    - JSON stdout 출력(`--json`)
+ *    - JSON 파일 저장(`--out`)
+ *
+ * 사용 방법(Windows PowerShell 예시)
+ * - 반드시 패키지 루트(= `cdxgen/cdxgen`, package.json 있는 폴더)에서 실행하는 것을 권장합니다.
+ *
+ *   # 1) dependenciesList 요약
+ *   node .\test\code\parsePyLockData.run.js -l .\test\local-data\poetry\poetry.lock --show-deps
+ *
+ *   # 2) 전체 결과를 JSON 파일로 저장
+ *   node .\test\code\parsePyLockData.run.js -l .\test\local-data\poetry\poetry.lock --json -o .\test\local-data\poetry\poetry.lock.parsed.json
+ *
+ *   # 3) 특정 패키지의 dependency 노드 1개만 저장(패키지명으로 bom-ref 자동 탐색)
+ *   node .\test\code\parsePyLockData.run.js -l .\test\local-data\poetry\poetry.lock --show-deps --name django -o .\test\local-data\poetry\django.deps.json
+ */
+
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 
 import { parsePyLockData } from "../../lib/helpers/utils.js";
 
+/**
+ * argv를 파싱해서 옵션 객체로 변환합니다.
+ * - 인자 값이 없는 플래그(`--show-deps` 등)는 boolean으로 처리합니다.
+ * - `--lock`, `--pyproject`, `--ref`, `--name`, `--out`는 다음 토큰을 값으로 읽습니다.
+ */
 function parseArgs(argv) {
   const out = {
     lock: undefined,
@@ -51,7 +87,7 @@ function parseArgs(argv) {
 function usage() {
   // Intentionally plain text (good for copy/paste)
   console.log(`Usage:
-  node ./test/parsePyLockData.run.js --lock <lockfile> [--pyproject <pyproject.toml>] [options]
+  node ./test/code/parsePyLockData.run.js --lock <lockfile> [--pyproject <pyproject.toml>] [options]
 
 Options:
   -l, --lock         Path to poetry.lock / pdm.lock / uv.lock / uv-workspace.lock
@@ -65,13 +101,19 @@ Options:
   -h, --help         Show help
 
 Examples:
-  node ./test/parsePyLockData.run.js -l ./test/data/uv.lock --show-deps
-  node ./test/parsePyLockData.run.js -l ./test/data/uv-workspace.lock -p ./test/data/pyproject_uv-workspace.toml --show-deps
-  node ./test/parsePyLockData.run.js -l ./test/local-data/poetry.lock --json -o ./test/local-data/poetry.lock.parsed.json
-  node ./test/parsePyLockData.run.js -l ./test/local-data/poetry.lock --show-deps --name django -o ./test/local-data/django.deps.json
+  node ./test/code/parsePyLockData.run.js -l ./test/data/uv.lock --show-deps
+  node ./test/code/parsePyLockData.run.js -l ./test/data/uv-workspace.lock -p ./test/data/pyproject_uv-workspace.toml --show-deps
+  node ./test/code/parsePyLockData.run.js -l ./test/local-data/poetry/poetry.lock --json -o ./test/local-data/poetry/poetry.lock.parsed.json
+  node ./test/code/parsePyLockData.run.js -l ./test/local-data/poetry/poetry.lock --show-deps --name django -o ./test/local-data/poetry/django.deps.json
 `);
 }
 
+/**
+ * 메인 실행 함수
+ * - 파일 존재 여부 확인 후 파서를 호출합니다.
+ * - `--name`이 주어진 경우 `pkgList`에서 이름으로 bom-ref를 찾아 `--ref`처럼 동작하게 합니다.
+ * - `--out`이 주어진 경우 JSON 파일을 생성합니다.
+ */
 async function main() {
   const args = parseArgs(process.argv.slice(2));
   if (args.help) {
