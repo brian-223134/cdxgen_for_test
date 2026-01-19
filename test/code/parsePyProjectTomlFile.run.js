@@ -3,7 +3,7 @@
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 
-import { parsePyProjectTomlFile } from "../lib/helpers/utils.js";
+import { parsePyProjectTomlFile } from "../../lib/helpers/utils.js";
 
 function parseArgs(argv) {
   const out = {

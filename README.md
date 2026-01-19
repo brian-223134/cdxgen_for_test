@@ -2,8 +2,8 @@
 
 이 폴더는 `cdxgen`의 파서 함수들을 단독으로 실행해보는 “실험용 데이터/결과물” 공간입니다.
 
-- `poetry/`: `parsePyLockData.run.js`로 `poetry.lock` 기반 의존성 파싱을 실험
-- `pyproject/`: `parsePyProjectTomlFile.run.js`로 `pyproject.toml` 파싱을 실험
+- `poetry/`: `test/code/parsePyLockData.run.js`로 `poetry.lock` 기반 의존성 파싱을 실험
+- `pyproject/`: `test/code/parsePyProjectTomlFile.run.js`로 `pyproject.toml` 파싱을 실험
 
 > NOTE
 >
@@ -31,8 +31,9 @@ npm install
 ```text
 cdxgen/
 	test/
-		parsePyLockData.run.js
-		parsePyProjectTomlFile.run.js
+		code/
+			parsePyLockData.run.js
+			parsePyProjectTomlFile.run.js
 		local-data/
 			README.md
 			poetry/
@@ -62,25 +63,25 @@ cdxgen/
 
 ```powershell
 cd C:\Users\cjkim\Desktop\cdxgen\cdxgen
-node .\test\parsePyLockData.run.js -l .\test\local-data\poetry\poetry.lock --show-deps
+node .\test\code\parsePyLockData.run.js -l .\test\local-data\poetry\poetry.lock --show-deps
 ```
 
 #### B. 전체 결과를 JSON으로 파일 저장
 
 ```powershell
-node .\test\parsePyLockData.run.js -l .\test\local-data\poetry\poetry.lock --json -o .\test\local-data\poetry\poetry.lock.parsed.json
+node .\test\code\parsePyLockData.run.js -l .\test\local-data\poetry\poetry.lock --json -o .\test\local-data\poetry\poetry.lock.parsed.json
 ```
 
 #### C. 특정 패키지 1개 노드만 저장(패키지명으로 찾기)
 
 ```powershell
-node .\test\parsePyLockData.run.js -l .\test\local-data\poetry\poetry.lock --show-deps --name django -o .\test\local-data\poetry\django.deps.json
+node .\test\code\parsePyLockData.run.js -l .\test\local-data\poetry\poetry.lock --show-deps --name django -o .\test\local-data\poetry\django.deps.json
 ```
 
 #### D. pyproject까지 같이 넘겨서 실행(선택)
 
 ```powershell
-node .\test\parsePyLockData.run.js -l .\test\local-data\poetry\poetry.lock -p .\test\local-data\poetry\pyproject.toml --show-deps
+node .\test\code\parsePyLockData.run.js -l .\test\local-data\poetry\poetry.lock -p .\test\local-data\poetry\pyproject.toml --show-deps
 ```
 
 ### 결과물(생성 파일)
@@ -102,20 +103,20 @@ node .\test\parsePyLockData.run.js -l .\test\local-data\poetry\poetry.lock -p .\
 
 ```powershell
 cd C:\Users\cjkim\Desktop\cdxgen\cdxgen
-node .\test\parsePyProjectTomlFile.run.js -p .\test\local-data\pyproject\pyproject.toml
+node .\test\code\parsePyProjectTomlFile.run.js -p .\test\local-data\pyproject\pyproject.toml
 ```
 
 #### B. direct/group/workspace 상세 출력
 
 ```powershell
-node .\test\parsePyProjectTomlFile.run.js -p .\test\local-data\pyproject\pyproject.toml --show-direct --show-groups --show-workspace-paths
+node .\test\code\parsePyProjectTomlFile.run.js -p .\test\local-data\pyproject\pyproject.toml --show-direct --show-groups --show-workspace-paths
 ```
 
 #### C. 요약 JSON 저장 / 전체 JSON 저장
 
 ```powershell
-node .\test\parsePyProjectTomlFile.run.js -p .\test\local-data\pyproject\pyproject.toml -o .\test\local-data\pyproject\pyproject.summary.json
-node .\test\parsePyProjectTomlFile.run.js -p .\test\local-data\pyproject\pyproject.toml --json -o .\test\local-data\pyproject\pyproject.parsed.json
+node .\test\code\parsePyProjectTomlFile.run.js -p .\test\local-data\pyproject\pyproject.toml -o .\test\local-data\pyproject\pyproject.summary.json
+node .\test\code\parsePyProjectTomlFile.run.js -p .\test\local-data\pyproject\pyproject.toml --json -o .\test\local-data\pyproject\pyproject.parsed.json
 ```
 
 ---
