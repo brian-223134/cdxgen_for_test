@@ -1,0 +1,2257 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:1b7c9afb-259d-440d-a30d-96aa249178c9",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-01-19T02:46:02Z",
+    "tools": {
+      "components": [
+        {
+          "group": "@cyclonedx",
+          "name": "cdxgen",
+          "version": "12.1.0",
+          "purl": "pkg:npm/%40cyclonedx/cdxgen@12.1.0",
+          "type": "application",
+          "bom-ref": "pkg:npm/@cyclonedx/cdxgen@12.1.0",
+          "publisher": "OWASP Foundation",
+          "authors": [
+            {
+              "name": "OWASP Foundation"
+            }
+          ]
+        }
+      ]
+    },
+    "authors": [
+      {
+        "name": "OWASP Foundation"
+      }
+    ],
+    "lifecycles": [
+      {
+        "phase": "build"
+      }
+    ],
+    "component": {
+      "group": "",
+      "name": "back",
+      "version": "latest",
+      "type": "application",
+      "bom-ref": "pkg:pypi/back@latest",
+      "purl": "pkg:pypi/back@latest"
+    },
+    "properties": [
+      {
+        "name": "cdx:bom:componentTypes",
+        "value": "pypi"
+      },
+      {
+        "name": "cdx:bom:componentSrcFiles",
+        "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock\\nC:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+      }
+    ]
+  },
+  "components": [
+    {
+      "group": "",
+      "name": "annotated-types",
+      "version": "0.7.0",
+      "description": "Reusable constraint types to use with typing.Annotated",
+      "purl": "pkg:pypi/annotated-types@0.7.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/annotated-types@0.7.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.8"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "anyio",
+      "version": "4.12.0",
+      "description": "High-level concurrency and networking framework on top of asyncio or Trio",
+      "purl": "pkg:pypi/anyio@4.12.0",
+      "type": "framework",
+      "bom-ref": "pkg:pypi/anyio@4.12.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.9"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      },
+      "tags": [
+        "framework"
+      ]
+    },
+    {
+      "group": "",
+      "name": "asgiref",
+      "version": "3.9.1",
+      "description": "ASGI specs, helper code, and adapters",
+      "purl": "pkg:pypi/asgiref@3.9.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/asgiref@3.9.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.9"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "boto3",
+      "version": "1.40.33",
+      "description": "The AWS SDK for Python",
+      "purl": "pkg:pypi/boto3@1.40.33",
+      "type": "framework",
+      "bom-ref": "pkg:pypi/boto3@1.40.33",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.9"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      },
+      "tags": [
+        "framework"
+      ]
+    },
+    {
+      "group": "",
+      "name": "botocore",
+      "version": "1.40.33",
+      "description": "Low-level, data-driven core of boto 3.",
+      "purl": "pkg:pypi/botocore@1.40.33",
+      "type": "framework",
+      "bom-ref": "pkg:pypi/botocore@1.40.33",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.9"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      },
+      "tags": [
+        "framework"
+      ]
+    },
+    {
+      "group": "",
+      "name": "certifi",
+      "version": "2025.8.3",
+      "description": "Python package for providing Mozilla's CA Bundle.",
+      "purl": "pkg:pypi/certifi@2025.8.3",
+      "type": "library",
+      "bom-ref": "pkg:pypi/certifi@2025.8.3",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.7"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      },
+      "tags": [
+        "bundle"
+      ]
+    },
+    {
+      "group": "",
+      "name": "cffi",
+      "version": "2.0.0",
+      "description": "Foreign Function Interface for Python calling C code.",
+      "purl": "pkg:pypi/cffi@2.0.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/cffi@2.0.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.9"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      },
+      "tags": [
+        "native"
+      ]
+    },
+    {
+      "group": "",
+      "name": "charset-normalizer",
+      "version": "3.4.3",
+      "description": "The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet.",
+      "purl": "pkg:pypi/charset-normalizer@3.4.3",
+      "type": "library",
+      "bom-ref": "pkg:pypi/charset-normalizer@3.4.3",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.7"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "colorama",
+      "version": "0.4.6",
+      "description": "Cross-platform colored terminal text.",
+      "purl": "pkg:pypi/colorama@0.4.6",
+      "type": "library",
+      "bom-ref": "pkg:pypi/colorama@0.4.6",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*,>=2.7"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "cryptography",
+      "version": "46.0.1",
+      "description": "cryptography is a package which provides cryptographic recipes and primitives to Python developers.",
+      "purl": "pkg:pypi/cryptography@46.0.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/cryptography@46.0.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": "!=3.9.0,!=3.9.1,>=3.8"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "distro",
+      "version": "1.9.0",
+      "description": "Distro - an OS platform information API",
+      "purl": "pkg:pypi/distro@1.9.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/distro@1.9.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.6"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "dj-rest-auth",
+      "version": "7.0.1",
+      "description": "Authentication and Registration in Django Rest Framework",
+      "purl": "pkg:pypi/dj-rest-auth@7.0.1",
+      "type": "framework",
+      "bom-ref": "pkg:pypi/dj-rest-auth@7.0.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.8"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      },
+      "tags": [
+        "framework",
+        "rest"
+      ]
+    },
+    {
+      "group": "",
+      "name": "django",
+      "version": "5.2.6",
+      "description": "A high-level Python web framework that encourages rapid development and clean, pragmatic design.",
+      "purl": "pkg:pypi/django@5.2.6",
+      "type": "framework",
+      "bom-ref": "pkg:pypi/django@5.2.6",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.10"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      },
+      "tags": [
+        "framework",
+        "web"
+      ]
+    },
+    {
+      "group": "",
+      "name": "django-allauth",
+      "version": "65.11.2",
+      "description": "Integrated set of Django applications addressing authentication, registration, account management as well as 3rd party (social) account authentication.",
+      "purl": "pkg:pypi/django-allauth@65.11.2",
+      "type": "framework",
+      "bom-ref": "pkg:pypi/django-allauth@65.11.2",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.8"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      },
+      "tags": [
+        "framework"
+      ]
+    },
+    {
+      "group": "",
+      "name": "django-cors-headers",
+      "version": "4.8.0",
+      "description": "django-cors-headers is a Django application for handling the server headers required for Cross-Origin Resource Sharing (CORS).",
+      "purl": "pkg:pypi/django-cors-headers@4.8.0",
+      "type": "framework",
+      "bom-ref": "pkg:pypi/django-cors-headers@4.8.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.9"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      },
+      "tags": [
+        "framework",
+        "resource"
+      ]
+    },
+    {
+      "group": "",
+      "name": "django-storages",
+      "version": "1.14.6",
+      "description": "Support for many storage backends in Django",
+      "purl": "pkg:pypi/django-storages@1.14.6",
+      "type": "framework",
+      "bom-ref": "pkg:pypi/django-storages@1.14.6",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.7"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      },
+      "tags": [
+        "framework"
+      ]
+    },
+    {
+      "group": "",
+      "name": "djangorestframework",
+      "version": "3.16.1",
+      "description": "Web APIs for Django, made easy.",
+      "purl": "pkg:pypi/djangorestframework@3.16.1",
+      "type": "framework",
+      "bom-ref": "pkg:pypi/djangorestframework@3.16.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.9"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      },
+      "tags": [
+        "framework"
+      ]
+    },
+    {
+      "group": "",
+      "name": "djangorestframework-simplejwt",
+      "version": "5.5.1",
+      "description": "A minimal JSON Web Token authentication plugin for Django REST Framework",
+      "purl": "pkg:pypi/djangorestframework-simplejwt@5.5.1",
+      "type": "framework",
+      "bom-ref": "pkg:pypi/djangorestframework-simplejwt@5.5.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.9"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      },
+      "tags": [
+        "framework",
+        "json",
+        "rest",
+        "token",
+        "web"
+      ]
+    },
+    {
+      "group": "",
+      "name": "drf-yasg",
+      "version": "1.21.10",
+      "description": "Automated generation of real Swagger/OpenAPI 2.0 schemas from Django Rest Framework code.",
+      "purl": "pkg:pypi/drf-yasg@1.21.10",
+      "type": "framework",
+      "bom-ref": "pkg:pypi/drf-yasg@1.21.10",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.6"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      },
+      "tags": [
+        "framework",
+        "rest"
+      ]
+    },
+    {
+      "group": "",
+      "name": "h11",
+      "version": "0.16.0",
+      "description": "A pure-Python, bring-your-own-I/O implementation of HTTP/1.1",
+      "purl": "pkg:pypi/h11@0.16.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/h11@0.16.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.8"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "httpcore",
+      "version": "1.0.9",
+      "description": "A minimal low-level HTTP client.",
+      "purl": "pkg:pypi/httpcore@1.0.9",
+      "type": "library",
+      "bom-ref": "pkg:pypi/httpcore@1.0.9",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.8"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "httpx",
+      "version": "0.28.1",
+      "description": "The next generation HTTP client.",
+      "purl": "pkg:pypi/httpx@0.28.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/httpx@0.28.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.8"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "idna",
+      "version": "3.10",
+      "description": "Internationalized Domain Names in Applications (IDNA)",
+      "purl": "pkg:pypi/idna@3.10",
+      "type": "library",
+      "bom-ref": "pkg:pypi/idna@3.10",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.6"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "inflection",
+      "version": "0.5.1",
+      "description": "A port of Ruby on Rails inflector to Python",
+      "purl": "pkg:pypi/inflection@0.5.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/inflection@0.5.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.5"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "jiter",
+      "version": "0.12.0",
+      "description": "Fast iterable JSON parser.",
+      "purl": "pkg:pypi/jiter@0.12.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/jiter@0.12.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.9"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      },
+      "tags": [
+        "json"
+      ]
+    },
+    {
+      "group": "",
+      "name": "jmespath",
+      "version": "1.0.1",
+      "description": "JSON Matching Expressions",
+      "purl": "pkg:pypi/jmespath@1.0.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/jmespath@1.0.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.7"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "oauthlib",
+      "version": "3.3.1",
+      "description": "A generic, spec-compliant, thorough implementation of the OAuth request-signing logic",
+      "purl": "pkg:pypi/oauthlib@3.3.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/oauthlib@3.3.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.8"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "openai",
+      "version": "2.8.1",
+      "description": "The official Python library for the openai API",
+      "purl": "pkg:pypi/openai@2.8.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/openai@2.8.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.9"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      },
+      "tags": [
+        "ml"
+      ]
+    },
+    {
+      "group": "",
+      "name": "packaging",
+      "version": "25.0",
+      "description": "Core utilities for Python packages",
+      "purl": "pkg:pypi/packaging@25.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/packaging@25.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.8"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "pillow",
+      "version": "11.3.0",
+      "description": "Python Imaging Library (Fork)",
+      "purl": "pkg:pypi/pillow@11.3.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pillow@11.3.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.9"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "psycopg2-binary",
+      "version": "2.9.10",
+      "description": "psycopg2 - Python-PostgreSQL Database Adapter",
+      "purl": "pkg:pypi/psycopg2-binary@2.9.10",
+      "type": "library",
+      "bom-ref": "pkg:pypi/psycopg2-binary@2.9.10",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.8"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      },
+      "tags": [
+        "database"
+      ]
+    },
+    {
+      "group": "",
+      "name": "pycparser",
+      "version": "2.23",
+      "description": "C parser in Python",
+      "purl": "pkg:pypi/pycparser@2.23",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pycparser@2.23",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.8"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      },
+      "tags": [
+        "parse"
+      ]
+    },
+    {
+      "group": "",
+      "name": "pydantic",
+      "version": "2.12.5",
+      "description": "Data validation using Python type hints",
+      "purl": "pkg:pypi/pydantic@2.12.5",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pydantic@2.12.5",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.9"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      },
+      "tags": [
+        "validation"
+      ]
+    },
+    {
+      "group": "",
+      "name": "pydantic-core",
+      "version": "2.41.5",
+      "description": "Core functionality for Pydantic validation and serialization",
+      "purl": "pkg:pypi/pydantic-core@2.41.5",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pydantic-core@2.41.5",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.9"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      },
+      "tags": [
+        "validation"
+      ]
+    },
+    {
+      "group": "",
+      "name": "pyjwt",
+      "version": "2.10.1",
+      "description": "JSON Web Token implementation in Python",
+      "purl": "pkg:pypi/pyjwt@2.10.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pyjwt@2.10.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.9"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      },
+      "tags": [
+        "token",
+        "web"
+      ]
+    },
+    {
+      "group": "",
+      "name": "pymysql",
+      "version": "1.1.2",
+      "description": "Pure Python MySQL Driver",
+      "purl": "pkg:pypi/pymysql@1.1.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pymysql@1.1.2",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.8"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      },
+      "tags": [
+        "mysql"
+      ]
+    },
+    {
+      "group": "",
+      "name": "python-dateutil",
+      "version": "2.9.0.post0",
+      "description": "Extensions to the standard Python datetime module",
+      "purl": "pkg:pypi/python-dateutil@2.9.0.post0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/python-dateutil@2.9.0.post0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "pytz",
+      "version": "2025.2",
+      "description": "World timezone definitions, modern and historical",
+      "purl": "pkg:pypi/pytz@2025.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pytz@2025.2",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": "*"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "pyyaml",
+      "version": "6.0.2",
+      "description": "YAML parser and emitter for Python",
+      "purl": "pkg:pypi/pyyaml@6.0.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/pyyaml@6.0.2",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.8"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "requests",
+      "version": "2.32.5",
+      "description": "Python HTTP for Humans.",
+      "purl": "pkg:pypi/requests@2.32.5",
+      "type": "library",
+      "bom-ref": "pkg:pypi/requests@2.32.5",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.9"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "requests-oauthlib",
+      "version": "2.0.0",
+      "description": "OAuthlib authentication support for Requests.",
+      "purl": "pkg:pypi/requests-oauthlib@2.0.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/requests-oauthlib@2.0.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.4"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "s3transfer",
+      "version": "0.14.0",
+      "description": "An Amazon S3 Transfer Manager",
+      "purl": "pkg:pypi/s3transfer@0.14.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/s3transfer@0.14.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.9"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "six",
+      "version": "1.17.0",
+      "description": "Python 2 and 3 compatibility utilities",
+      "purl": "pkg:pypi/six@1.17.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/six@1.17.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "sniffio",
+      "version": "1.3.1",
+      "description": "Sniff out which async library your code is running under",
+      "purl": "pkg:pypi/sniffio@1.3.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/sniffio@1.3.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.7"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      },
+      "tags": [
+        "native"
+      ]
+    },
+    {
+      "group": "",
+      "name": "sqlparse",
+      "version": "0.5.3",
+      "description": "A non-validating SQL parser.",
+      "purl": "pkg:pypi/sqlparse@0.5.3",
+      "type": "library",
+      "bom-ref": "pkg:pypi/sqlparse@0.5.3",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.8"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      },
+      "tags": [
+        "sql"
+      ]
+    },
+    {
+      "group": "",
+      "name": "tqdm",
+      "version": "4.67.1",
+      "description": "Fast, Extensible Progress Meter",
+      "purl": "pkg:pypi/tqdm@4.67.1",
+      "type": "library",
+      "bom-ref": "pkg:pypi/tqdm@4.67.1",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.7"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "typing-extensions",
+      "version": "4.15.0",
+      "description": "Backported and Experimental Type Hints for Python 3.9+",
+      "purl": "pkg:pypi/typing-extensions@4.15.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/typing-extensions@4.15.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.9"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      },
+      "tags": [
+        "devel"
+      ]
+    },
+    {
+      "group": "",
+      "name": "typing-inspection",
+      "version": "0.4.2",
+      "description": "Runtime typing introspection tools",
+      "purl": "pkg:pypi/typing-inspection@0.4.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/typing-inspection@0.4.2",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.9"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      },
+      "tags": [
+        "devel"
+      ]
+    },
+    {
+      "group": "",
+      "name": "tzdata",
+      "version": "2025.2",
+      "description": "Provider of IANA time zone data",
+      "purl": "pkg:pypi/tzdata@2025.2",
+      "type": "library",
+      "bom-ref": "pkg:pypi/tzdata@2025.2",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=2"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "uritemplate",
+      "version": "4.2.0",
+      "description": "Implementation of RFC 6570 URI Templates",
+      "purl": "pkg:pypi/uritemplate@4.2.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/uritemplate@4.2.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.9"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "urllib3",
+      "version": "2.5.0",
+      "description": "HTTP library with thread-safe connection pooling, file post, and more.",
+      "purl": "pkg:pypi/urllib3@2.5.0",
+      "type": "library",
+      "bom-ref": "pkg:pypi/urllib3@2.5.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\pyproject.toml"
+        },
+        {
+          "name": "cdx:pypi:requiresPython",
+          "value": ">=3.9"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+              }
+            ],
+            "concludedValue": "C:\\Users\\cjkim\\Desktop\\capstone\\back\\project\\poetry.lock"
+          }
+        ]
+      }
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:pypi/back@latest",
+      "dependsOn": [
+        "pkg:pypi/boto3@1.40.33",
+        "pkg:pypi/cryptography@46.0.1",
+        "pkg:pypi/dj-rest-auth@7.0.1",
+        "pkg:pypi/django-allauth@65.11.2",
+        "pkg:pypi/django-cors-headers@4.8.0",
+        "pkg:pypi/django-storages@1.14.6",
+        "pkg:pypi/django@5.2.6",
+        "pkg:pypi/djangorestframework-simplejwt@5.5.1",
+        "pkg:pypi/djangorestframework@3.16.1",
+        "pkg:pypi/drf-yasg@1.21.10",
+        "pkg:pypi/openai@2.8.1",
+        "pkg:pypi/pillow@11.3.0",
+        "pkg:pypi/psycopg2-binary@2.9.10",
+        "pkg:pypi/pymysql@1.1.2",
+        "pkg:pypi/requests-oauthlib@2.0.0",
+        "pkg:pypi/requests@2.32.5"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/annotated-types@0.7.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/anyio@4.12.0",
+      "dependsOn": [
+        "pkg:pypi/idna@3.10"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/asgiref@3.9.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/boto3@1.40.33",
+      "dependsOn": [
+        "pkg:pypi/botocore@1.40.33",
+        "pkg:pypi/jmespath@1.0.1",
+        "pkg:pypi/s3transfer@0.14.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/botocore@1.40.33",
+      "dependsOn": [
+        "pkg:pypi/jmespath@1.0.1",
+        "pkg:pypi/python-dateutil@2.9.0.post0",
+        "pkg:pypi/urllib3@2.5.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/certifi@2025.8.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/cffi@2.0.0",
+      "dependsOn": [
+        "pkg:pypi/pycparser@2.23"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/charset-normalizer@3.4.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/colorama@0.4.6",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/cryptography@46.0.1",
+      "dependsOn": [
+        "pkg:pypi/cffi@2.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/distro@1.9.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/dj-rest-auth@7.0.1",
+      "dependsOn": [
+        "pkg:pypi/djangorestframework@3.16.1"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/django@5.2.6",
+      "dependsOn": [
+        "pkg:pypi/asgiref@3.9.1",
+        "pkg:pypi/sqlparse@0.5.3",
+        "pkg:pypi/tzdata@2025.2"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/django-allauth@65.11.2",
+      "dependsOn": [
+        "pkg:pypi/asgiref@3.9.1"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/django-cors-headers@4.8.0",
+      "dependsOn": [
+        "pkg:pypi/asgiref@3.9.1",
+        "pkg:pypi/django@5.2.6"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/django-storages@1.14.6",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/djangorestframework@3.16.1",
+      "dependsOn": [
+        "pkg:pypi/django@5.2.6"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/djangorestframework-simplejwt@5.5.1",
+      "dependsOn": [
+        "pkg:pypi/django@5.2.6",
+        "pkg:pypi/djangorestframework@3.16.1",
+        "pkg:pypi/pyjwt@2.10.1"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/drf-yasg@1.21.10",
+      "dependsOn": [
+        "pkg:pypi/django@5.2.6",
+        "pkg:pypi/djangorestframework@3.16.1",
+        "pkg:pypi/inflection@0.5.1",
+        "pkg:pypi/packaging@25.0",
+        "pkg:pypi/pytz@2025.2",
+        "pkg:pypi/pyyaml@6.0.2",
+        "pkg:pypi/uritemplate@4.2.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/h11@0.16.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/httpcore@1.0.9",
+      "dependsOn": [
+        "pkg:pypi/certifi@2025.8.3",
+        "pkg:pypi/h11@0.16.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/httpx@0.28.1",
+      "dependsOn": [
+        "pkg:pypi/anyio@4.12.0",
+        "pkg:pypi/certifi@2025.8.3",
+        "pkg:pypi/httpcore@1.0.9",
+        "pkg:pypi/idna@3.10"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/idna@3.10",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/inflection@0.5.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/jiter@0.12.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/jmespath@1.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/oauthlib@3.3.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/openai@2.8.1",
+      "dependsOn": [
+        "pkg:pypi/anyio@4.12.0",
+        "pkg:pypi/distro@1.9.0",
+        "pkg:pypi/httpx@0.28.1",
+        "pkg:pypi/jiter@0.12.0",
+        "pkg:pypi/pydantic@2.12.5",
+        "pkg:pypi/sniffio@1.3.1",
+        "pkg:pypi/tqdm@4.67.1",
+        "pkg:pypi/typing-extensions@4.15.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/packaging@25.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pillow@11.3.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/psycopg2-binary@2.9.10",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pycparser@2.23",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pydantic@2.12.5",
+      "dependsOn": [
+        "pkg:pypi/annotated-types@0.7.0",
+        "pkg:pypi/pydantic-core@2.41.5",
+        "pkg:pypi/typing-extensions@4.15.0",
+        "pkg:pypi/typing-inspection@0.4.2"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/pydantic-core@2.41.5",
+      "dependsOn": [
+        "pkg:pypi/typing-extensions@4.15.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/pyjwt@2.10.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pymysql@1.1.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/python-dateutil@2.9.0.post0",
+      "dependsOn": [
+        "pkg:pypi/six@1.17.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/pytz@2025.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pyyaml@6.0.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/requests@2.32.5",
+      "dependsOn": [
+        "pkg:pypi/certifi@2025.8.3",
+        "pkg:pypi/idna@3.10",
+        "pkg:pypi/urllib3@2.5.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/requests-oauthlib@2.0.0",
+      "dependsOn": [
+        "pkg:pypi/oauthlib@3.3.1",
+        "pkg:pypi/requests@2.32.5"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/s3transfer@0.14.0",
+      "dependsOn": [
+        "pkg:pypi/botocore@1.40.33"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/six@1.17.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/sniffio@1.3.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/sqlparse@0.5.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/tqdm@4.67.1",
+      "dependsOn": [
+        "pkg:pypi/colorama@0.4.6"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/typing-extensions@4.15.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/typing-inspection@0.4.2",
+      "dependsOn": [
+        "pkg:pypi/typing-extensions@4.15.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/tzdata@2025.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/uritemplate@4.2.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/urllib3@2.5.0",
+      "dependsOn": []
+    }
+  ],
+  "annotations": [
+    {
+      "bom-ref": "metadata-annotations",
+      "subjects": [
+        "pkg:pypi/back@latest"
+      ],
+      "annotator": {
+        "component": {
+          "group": "@cyclonedx",
+          "name": "cdxgen",
+          "version": "12.1.0",
+          "purl": "pkg:npm/%40cyclonedx/cdxgen@12.1.0",
+          "type": "application",
+          "bom-ref": "pkg:npm/@cyclonedx/cdxgen@12.1.0",
+          "publisher": "OWASP Foundation",
+          "authors": [
+            {
+              "name": "OWASP Foundation"
+            }
+          ]
+        }
+      },
+      "timestamp": "2026-01-19T02:46:02Z",
+      "text": "This Software Bill-of-Materials (SBOM) document was created on Monday, January 19, 2026 with cdxgen. The data was captured during the build lifecycle phase. The document describes an application named 'back'. There are 51 components."
+    }
+  ]
+}

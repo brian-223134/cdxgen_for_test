@@ -1,0 +1,8 @@
+{
+  "ref": "pkg:pypi/django@5.2.6",
+  "dependsOn": [
+    "pkg:pypi/asgiref@3.9.1",
+    "pkg:pypi/sqlparse@0.5.3",
+    "pkg:pypi/tzdata@2025.2"
+  ]
+}
