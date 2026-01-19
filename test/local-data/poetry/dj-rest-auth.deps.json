@@ -1,0 +1,6 @@
+{
+  "ref": "pkg:pypi/dj-rest-auth@7.0.1",
+  "dependsOn": [
+    "pkg:pypi/djangorestframework@3.16.1"
+  ]
+}
