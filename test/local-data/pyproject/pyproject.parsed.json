@@ -1,0 +1,57 @@
+{
+  "parentComponent": {
+    "name": "project",
+    "version": "0.1.0",
+    "authors": [
+      {
+        "name": "brian",
+        "email": "kimchanjoong54@gmail.com"
+      }
+    ],
+    "properties": [
+      {
+        "name": "cdx:pypi:requiresPython",
+        "value": ">=3.12"
+      }
+    ],
+    "type": "application",
+    "bom-ref": "pkg:pypi/project@0.1.0",
+    "purl": "pkg:pypi/project@0.1.0",
+    "evidence": {
+      "identity": {
+        "field": "purl",
+        "confidence": 1,
+        "methods": [
+          {
+            "technique": "manifest-analysis",
+            "confidence": 1,
+            "value": "C:\\Users\\cjkim\\Desktop\\cdxgen\\cdxgen\\test\\local-data\\pyproject.toml"
+          }
+        ]
+      }
+    }
+  },
+  "poetryMode": true,
+  "uvMode": false,
+  "hatchMode": false,
+  "workspacePaths": [],
+  "directDepsKeys": {
+    "django": true,
+    "psycopg2-binary": true,
+    "djangorestframework": true,
+    "django-cors-headers": true,
+    "djangorestframework-simplejwt": true,
+    "django-allauth": true,
+    "requests": true,
+    "cryptography": true,
+    "pillow": true,
+    "boto3": true,
+    "django-storages": true,
+    "drf-yasg": true,
+    "dj-rest-auth": true,
+    "requests-oauthlib": true,
+    "pymysql": true,
+    "openai": true
+  },
+  "groupDepsKeys": {}
+}
